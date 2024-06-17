@@ -1,0 +1,4 @@
+const style={
+    HeadText:
+    "font-"
+}

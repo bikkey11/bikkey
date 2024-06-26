@@ -4,7 +4,6 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaFacebook } from "react-icons/fa";
 import Redhat from "../Assets/Redhat.png";
 
 const ProjectTimeline = ({ project }) => {
@@ -41,61 +40,63 @@ const ProjectTimeline = ({ project }) => {
 const RecentWorks = () => {
   const projects = [
     {
-      title: "React.js Developer",
+      title: "Microsoft Todo Clone",
       company_name: "Starbucks",
       icon: Redhat,
       iconBg: "#383E56",
       date: "March 2020 - April 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Frontend developed using React framework",
+        "Used tailwind css, framer-motions for styling and animations. Express js to write backend  code. ",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "User Authentication, Add to calander, Notification, Update, check notes available.",
       ],
     },
     {
-      title: "React Native Developer",
+      title: "Sastodeal Clone",
       company_name: "Tesla",
       icon: Redhat,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Frontend developed using React framework",
+        "Used tailwind css, framer-motions for styling and animations. Express js to write backend  code. ",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "User Authentication, Add to products, Update products, Add to cart, and more features like complete e-commerce.",
+        
       ],
     },
     {
-      title: "Web Developer",
+      title: "3D Portfolio site",
       company_name: "Shopify",
       icon: Redhat,
       iconBg: "#383E56",
       date: "Jan 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+       "Frontend developed using React framework",
+        "Used tailwind css, framer-motions for styling and animations. Express js to write backend  code. ",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Used react three js for 3d animations and other 3d stuff",
       ],
     },
     {
-      title: "Full stack Developer",
+      title: "Chat App",
       company_name: "Meta",
       icon: Redhat,
       iconBg: "#E6DEDD",
       date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+        "Frontend developed using React framework",
+        "Used tailwind css, framer-motions for styling and animations. Express js to write backend  code. ",
         "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Used web socket for real time messaging services"
+        
       ],
     },
   ];
 
   return (
-    <div className=" mt-24 flex flex-col gap-4">
+    <div className=" mt-24  flex flex-col gap-4" id="recentsWorks">
       <div className="text-white flex flex-col justify-center items-center gap-3">
         <h1 className="xs:text-[60px] text-[48px] leading-[48px] xs:leading-[60px] font-black font-poppins">Projects</h1>
         <span className="xs:text-xl text-base font-semibold font-poppins text-navText ">

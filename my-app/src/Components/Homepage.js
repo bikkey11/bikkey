@@ -4,12 +4,12 @@ import image1 from "../Assets/Bikkey.png";
 
 const Homepage = () => {
     return (
-        <div className="">
+        <div className="h-screen z-20" id="home">
             <Navbar />
-            <div className="flex justify-center h-max">
-                <div className=" md:mx-32 my-20 flex flex-col gap-10 max-w-[948px] h-max">
+            <div className="flex justify-center items-center h-full">
+                <div className="sm:mx-10 lg:mx-32 my-20 flex flex-col gap-10 max-w-[948px] h-max">
                     <div className="flex flex-wrap-reverse  font-Chakra_Petch justify-center md:flex  md:justify-between md:flex-nowrap ">
-                        <div className="flex flex-col gap-10  mx-10 my-4 items-center md:items-start ">
+                        <div className="animate-[navImg_1s_ease_forwards] flex flex-col gap-10  mx-10 my-4 items-center md:items-start ">
                            <div className="flex flex-col items-center md:items-start ">
                            <h1 className="text-white -leading-7 text-3xl xs:text-4xl md:text-5xl">Bikash Nath Yogi</h1>
                             <p className="text-navText text-[16px] xs:text-[20px">
@@ -25,11 +25,11 @@ const Homepage = () => {
                         </div>
                         <img
                             src={image1}
-                            className=" rounded-full  object-cover aspect-square lg:h-[350px] md:h-[300px] h-[200px]"
+                            className="animate-[navImg_1s_ease_300ms_forwards] opacity-0 rounded-full  object-cover aspect-square lg:h-[350px] md:h-[300px] h-[200px]"
                             alt=""
                         />
                     </div>
-                    <div className="mx-10 mt-10  gap-4 hidden md:block">
+                    {/* <div className="mx-10 mt-10  gap-4 hidden md:block">
                         <h1 className="text-navText text-xl font-Chakra_Petch  font-semibold ">
                             Worked With
                         </h1>
@@ -50,7 +50,7 @@ const Homepage = () => {
                                 Amazon{" "}
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
